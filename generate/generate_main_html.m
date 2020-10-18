@@ -9,7 +9,7 @@ fin_head = fopen('head.html','r');
 head = fread(fin_head);
 fin_tail = fopen('tail.html','r');
 tail = fread(fin_tail);
-fout = fopen('../today/index.html','w');
+fout = fopen('../index.html','w');
 fwrite(fout,head);
 for i = 1:size(time_table,1)
     fprintf(fout,'<tr><td id="timelist%d" class="%s timelist">%s</td></tr>\n', i, time_table{i,2},time_table{i,1});
