@@ -1,0 +1,55 @@
+/* 创建三个相等的列 */
+.column_left {
+  float: left;
+  width: 28%;
+  /* width: 100px; */
+}
+.column_right {
+  float: left;
+  /* width: 250px; */
+  width: 72%;
+}
+.pos_fixed
+{
+    position:fixed;
+    /* top:30px; */
+    /* right:5px; */
+}
+/* 列后清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table{
+    border-spacing: 0px;
+    text-align: center;
+}
+.Tsleep{
+    background-color: #0099CC;
+    /* padding-top: 0px; */
+    /* padding-right: 0px; */
+    /* padding-bottom: 0px; */
+    /* padding-left: 0px; */
+}
+.Teat{
+    background-color: #FFCC33;
+}
+.Trest{
+    background-color: #339933;
+}
+.Tmotion{
+    background-color: #FF9966;
+}
+.Twork{
+    background-color: #CCFFCC;
+}
+.passed_time{
+    background-color: #F0F8FF;
+}
+.this_time{
+  border: 3px solid #7FFF00;
+}
+td.table_record{
+    text-align:left;
+}
